@@ -1,0 +1,138 @@
+ 
+ .portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio__item {
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.portfolio__item:hover {
+  border-color: var(--color-primary-variant);
+  background: rgb(255, 255, 255);
+}
+
+.portfolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 30%;
+  
+}
+.portfolio__item-image img{
+display: block;
+width: 100%;
+object-fit: cover;}
+
+.portfolio__item h3 {
+  margin: 2rem 0;
+}
+
+.portfolio__item p {
+  margin: 0 0 1.2rem 0;
+  font-size: 0.9rem;
+}
+
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem; 
+}
+
+.portfolio__item-content {
+  height: 50%;
+}
+
+@media screen and (max-width: 1024px){
+  .portfolio__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .portfolio__container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+}
+
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant:  rgba(255, 255, 255, 0.6);
+  --color-primary: #bc1d1d;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #ffffffd4;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+ #portfolio h5 h2 h3{
+  font-weight: 500;
+}
+
+.text-light {
+  color: var(--color-primary)
+}
+
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+
+@media screen and (max-width: 1024px){
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}  

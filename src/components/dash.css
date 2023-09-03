@@ -1,0 +1,21 @@
+/* CSS Styles */
+.container {
+  
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .table {
+ 
+    margin-top: 20px;
+    border-radius: 50px;
+  }
+  
+  .table th, .table td {
+    border-color: red;
+  }
+
+  .table tr, .table td {
+    border-color: red;
+  }
